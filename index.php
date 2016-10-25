@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,12 +20,12 @@
   </head>
   <body>
     <!-- Inteface Start -->
-	<div class="container">
+	<div class="container" ng-app="HelloApp">
 		<div class="row">
 			<div class="col-md-8">
-				<h1>Content</h1>
+				<h1 id="title">Content</h1>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6" ng-controller="FormController">
 						<form>
 							<div class="form-group">
 								<label for="">Email</label>
@@ -42,7 +43,7 @@
 										</button>
 									</div>
 									<div class="col-md-6">
-										<button class="btn btn-primary">
+										<button class="btn btn-primary" ng-click="login()">
 											Login
 										</button>
 									</div>
@@ -70,9 +71,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
