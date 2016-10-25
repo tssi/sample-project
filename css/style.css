@@ -1,0 +1,17 @@
+/*
+ CSS Selector
+ Class  . period / dot
+ ID     # sharp / hashtag
+ 
+ <div id="title">
+ </div>
+ 
+ #title 
+ div#title 
+ 
+*/
+
+#title{
+	font-size:20px;
+}
+
